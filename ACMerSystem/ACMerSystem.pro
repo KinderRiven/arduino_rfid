@@ -20,10 +20,10 @@ RCC_DIR += ./GeneratedFiles
 include(ACMerSystem.pri)
 
 FORMS += \
-    kloginwindow.ui
+    kstartwindow.ui
 
 HEADERS += \
-    kloginwindow.h
+    kstartwindow.h
 
 SOURCES += \
-    kloginwindow.cpp
+    kstartwindow.cpp

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>580</width>
-    <height>285</height>
+    <height>270</height>
    </rect>
   </property>
   <property name="palette">
@@ -500,8 +500,10 @@
    </property>
    <property name="font">
     <font>
-     <family>楷体</family>
-     <pointsize>16</pointsize>
+     <family>宋体</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
@@ -517,13 +519,18 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Adobe Arabic</family>
+    </font>
+   </property>
   </widget>
   <widget class="QLabel" name="labTitle">
    <property name="geometry">
     <rect>
      <x>270</x>
      <y>20</y>
-     <width>201</width>
+     <width>261</width>
      <height>51</height>
     </rect>
    </property>
@@ -569,7 +576,7 @@
      <family>SAO UI</family>
      <pointsize>24</pointsize>
      <weight>75</weight>
-     <italic>true</italic>
+     <italic>false</italic>
      <bold>true</bold>
     </font>
    </property>
@@ -577,14 +584,14 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string>ACMerSystem</string>
+    <string>RFID System 1.0.0</string>
    </property>
   </widget>
   <widget class="QPushButton" name="butLogin">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>210</y>
+     <y>200</y>
      <width>111</width>
      <height>41</height>
     </rect>
@@ -615,7 +622,7 @@
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>210</y>
+     <y>200</y>
      <width>111</width>
      <height>41</height>
     </rect>
@@ -1077,9 +1084,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>270</y>
+     <y>255</y>
      <width>580</width>
-     <height>16</height>
+     <height>15</height>
     </rect>
    </property>
    <property name="palette">
@@ -1510,7 +1517,7 @@
      <x>0</x>
      <y>0</y>
      <width>16</width>
-     <height>281</height>
+     <height>271</height>
     </rect>
    </property>
    <property name="palette">
@@ -1940,8 +1947,8 @@
     <rect>
      <x>565</x>
      <y>10</y>
-     <width>15</width>
-     <height>271</height>
+     <width>16</width>
+     <height>261</height>
     </rect>
    </property>
    <property name="palette">

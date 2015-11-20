@@ -2,10 +2,14 @@
 #define ACMERSYSTEM_H
 
 #include "kHead.h"
+#include "ktable.h"
 #include <kloginwindow.h>
+#include <ksettingswindow.h>
 
 #include <QtWidgets/QMainWindow>
 #include "ui_acmersystem.h"
+#include "computerSystem.h"
+#include "kshowdata.h"
 
 class ACMerSystem : public QMainWindow
 {
@@ -14,10 +18,14 @@ class ACMerSystem : public QMainWindow
 public:
 	ACMerSystem(QWidget *parent = 0);
 	~ACMerSystem();
+	void kShow();
 
 public slots:
 	void menuExit();
 	void menuLogin();
+	void menuSetting();
+	void startRun();
+	void showData();
 protected:
 	void paintEvent(QPaintEvent*);						//绘图
 	void mousePressEvent(QMouseEvent *event);			//重写鼠标点击事件
@@ -31,6 +39,8 @@ private:
 	QAction *menuAction[10];	//菜单指针
 
 	kLoginWindow loginWindow;
+	kSettingsWindow settingsWindow;
+	kTable userTable;
 };
 
 #endif // ACMERSYSTEM_H

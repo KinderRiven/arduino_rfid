@@ -1,0 +1,1 @@
+java -jar mysqlServer.jar student cid 5024E34E

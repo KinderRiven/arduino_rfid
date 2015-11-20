@@ -7,9 +7,30 @@
 message("You are running qmake on a generated .pro file. This may not work!")
 
 
-HEADERS += ./kHead.h \
-    ./acmersystem.h
+HEADERS += ./computerSystem.h \
+    ./kHead.h \
+    ./kMusicData.h \
+    ./kUserData.h \
+    ./acmersystem.h \
+    ./kshowdata.h \
+    ./ktable.h \
+    ./kwarningwindow.h \
+    ./ksettingswindow.h \
+    ./kloginwindow.h
 SOURCES += ./acmersystem.cpp \
+    ./computerSystem.cpp \
+    ./kloginwindow.cpp \
+    ./kMusicData.cpp \
+    ./ksettingswindow.cpp \
+    ./kshowdata.cpp \
+    ./ktable.cpp \
+    ./kUserData.cpp \
+    ./kwarningwindow.cpp \
     ./main.cpp
-FORMS += ./acmersystem.ui
+FORMS += ./acmersystem.ui \
+    ./kloginwindow.ui \
+    ./ksettingswindow.ui \
+    ./kwarningwindow.ui \
+    ./kshowdata.ui \
+    ./ktable.ui
 RESOURCES += acmersystem.qrc
