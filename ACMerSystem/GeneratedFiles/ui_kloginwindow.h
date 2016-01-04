@@ -106,7 +106,7 @@ public:
         kLoginWindow->setAutoFillBackground(true);
         personImage = new QLabel(kLoginWindow);
         personImage->setObjectName(QStringLiteral("personImage"));
-        personImage->setGeometry(QRect(30, 40, 211, 211));
+        personImage->setGeometry(QRect(20, 30, 211, 211));
         personImage->setPixmap(QPixmap(QString::fromUtf8("Resources/image/person.png")));
         labUserName = new QLabel(kLoginWindow);
         labUserName->setObjectName(QStringLiteral("labUserName"));

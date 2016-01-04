@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,9 +22,9 @@ public class MysqlServer {
 	private String url;
     private Connection conn;
     private Statement stmt;
-    
-    final boolean DEBUG = false; 
-    
+
+    final boolean DEBUG = false;
+
     private String ip;
     private String port;
     private String database;
@@ -31,11 +32,11 @@ public class MysqlServer {
     private String password;
     private String userFile;
     private String timeFile;
-    
+
     private String outaddress;
-    
+
     final int table_column = 7;
-    
+
     Vector<String>vector;
     /*
      * jdbc:mysql://127.0.0.1:3306/rfid
@@ -96,7 +97,7 @@ public class MysqlServer {
 				}
 				Case++;
 			}
-			
+
 			url = "jdbc:mysql://" + ip + ":" + port + "/" + database;
 			if(DEBUG){
 				System.out.println(url + " " + username  + " " + password);
@@ -166,7 +167,7 @@ public class MysqlServer {
 	 */
 	void addUser(String cid){
 		try {
-			
+
 			FileWriter writer = new FileWriter(userFile, true);
             writer.write(cid + '\n');
             writer.close();
@@ -185,7 +186,7 @@ public class MysqlServer {
 			 * 	获得时间
 			 */
 			Date d = new Date();
-			DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");  
+			DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 			String s = sdf.format(d);
 			writer.write(s);
 			writer.write(" " + cid + "\n");
@@ -216,7 +217,7 @@ public class MysqlServer {
 		} catch (IOException e) {
 			System.out.println("Get user's data error!");
 		}
-		
+
 	}
 	/*
 	 * Main
@@ -230,9 +231,9 @@ public class MysqlServer {
 		 * read
 		 */
 		String sql = "";
-		sql = "SELECT * FROM " 
+		sql = "SELECT * FROM "
 				+ args[0] + " WHERE " + args[1] + " = \"" + args[2] + "\"";
-		
+
 		if(args.length == 3){
 			mServer.runSQL(sql);
 			mServer.closeConnect();

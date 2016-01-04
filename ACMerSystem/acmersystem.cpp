@@ -2,6 +2,7 @@
 
 ACMerSystem::ACMerSystem(QWidget *parent)
 	: QMainWindow(parent){
+
 	//ui.setupUi(this);
 	//вўВи
 	setWindowFlags(Qt::FramelessWindowHint);
